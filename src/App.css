@@ -3,8 +3,8 @@
 
 .header{
     text-align: center;
-    font-family: 'Comfortaa', cursive;
     color: #12ffe0;;
+    font-family: 'Comfortaa', cursive;
 }
 
 body{
@@ -35,8 +35,8 @@ body{
     border-radius: 7px;
     font-family: 'Chakra Petch', sans-serif;
     font-size: 15px;
-
-
+    
+    
 }
 
 ::placeholder { 
@@ -44,7 +44,7 @@ body{
     opacity: 1; 
     font-family: 'Chakra Petch', sans-serif;
     font-size: 15px;
-  }
+}
 
 .addBtn{
     width: 15%;
@@ -73,7 +73,7 @@ body{
     background-color: #12ffe0;;
     align-items: center;
     justify-content: space-between;
-
+    
 }
 
 .done img{
@@ -99,9 +99,36 @@ body{
 
 .doneClass{
     text-decoration:line-through;
-
+    
 }
 
 .notDoneClass{
     color:black;
 }
+
+.intro{
+    width: 94%;
+    margin-top: 130px;
+    background-color: #12ffe0;
+    border-radius: 7px;
+    font-size: 18px;
+    padding: 40px 30px;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.taskify{
+    font-family: 'Comfortaa', cursive;
+    font-size: 30px;
+    margin-right: 10px;
+    
+    
+}
+
+#text2{
+    margin-top: 30px;
+}
+
+#text3{
+    margin-top:30px ;
+}
+

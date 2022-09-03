@@ -60,8 +60,26 @@ const doneHandler = (id: number) => (e: React.MouseEvent) => {
   return (
     <div className='container'>
         <h1 className='header'>Taskify</h1>
-        <InputField inputText={inputText} setInputText = {setInputText} addHandler = {addHandler}/>
-        <Todolist todos={todos} deleteHandler = {deleteHandler} doneHandler= {doneHandler}/>
+        {
+          (todos.length===0)?(
+            <>
+              <InputField inputText={inputText} setInputText = {setInputText} addHandler = {addHandler}/>
+            <div className='intro'>
+              
+              <p id="text1"> <span className="taskify">Taskify</span>    is a simple place to jot down your tasks and proceed with them to boost your productivity.</p>
+              <p id="text2">To get started simply </p>
+              <p id="text3">Type in a task and click add to <span className='taskify'>Taskify</span></p>
+
+            </div>
+            </>
+          ):
+          ( 
+            <>
+            <InputField inputText={inputText} setInputText = {setInputText} addHandler = {addHandler}/>
+            <Todolist todos={todos} deleteHandler = {deleteHandler} doneHandler= {doneHandler}/>
+            </>
+          )
+        }
     </div>
   )
 }
